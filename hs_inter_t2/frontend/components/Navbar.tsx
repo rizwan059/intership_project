@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Logo from "@/components/Logo";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -13,7 +14,7 @@ const navLinks = [
 ];
 
 export default function Navbar() {
-  const pathname = usePathname(); 
+  const pathname = usePathname();
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white backdrop-blur-md">
@@ -21,20 +22,23 @@ export default function Navbar() {
 
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img
-            src="/hs_logo.png"
+          {/* <img
+            src="/logo.jpeg"
             alt="H&S Solutions Logo"
             className="h-12 w-12 object-contain"
-          />
-          {/* <span className="text-xl font-semibold text-gray-900">
+          /> */}
+          {/* <span className="text-xl font-sans text-gray-900">
             H&S Solutions
           </span> */}
+          <Link href="/">
+            <Logo />
+          </Link>
         </div>
 
         {/* Navigation Links */}
         <div className="hidden md:flex items-center font-sans gap-8">
           {navLinks.map((link) => {
-            const isActive = pathname === link.href; 
+            const isActive = pathname === link.href;
             return (
               <Link
                 key={link.name}

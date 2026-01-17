@@ -19,11 +19,17 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "H&S SOLUTIONS",
-  description: "H&S Solutions is an AI‑based agency.",
-};
+// export const metadata: Metadata = {
+//   title: "H&S SOLUTIONS",
+//   description: "H&S Solutions is an AI‑based agency.",
+// };
 
+export const metadata = {
+  title: "AI‑based agency",
+  icons: {
+    icon: "/favicon.svg",
+  },
+};
 export default function RootLayout({
   children,
 }: Readonly<{
