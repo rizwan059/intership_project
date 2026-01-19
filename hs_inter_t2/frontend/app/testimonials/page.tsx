@@ -72,11 +72,11 @@ export default function TestimonialsPage() {
       {/* Testimonials Section */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-semibold text-center mb-14">
-            What Our Clients Say
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-14">
+             What Our <span className="text-cyan-400">Clients Say</span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {testimonials.map((item, index) => (
               <div
                 key={index}
@@ -93,8 +93,8 @@ export default function TestimonialsPage() {
                   {/* <p className="font-semibold text-white">{item.name}</p>
                   <p className="text-sm text-cyan-400">{item.role}</p> */}
 
-                 <ClientTestimonial />
 
+                 <ClientTestimonial />
                 </div>
               </div>
             ))}

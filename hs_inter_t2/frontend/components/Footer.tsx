@@ -18,10 +18,10 @@ const footerLinks = [
 export default function Footer() {
   return (
     <footer className="bg-linear-to-br from-[#050B14] via-[#0A1A2F] to-[#050B14] text-white">
-      <div className="mx-auto max-w-4xl px-6 py-16">
+      <div className="mx-auto max-w-5xl px-6 py-16">
 
-        {/* ✅ TOP DIVIDER — SAME STYLE */}
-        <div className="mb-12 h-px bg-white" />
+        {/*  TOP DIVIDER — SAME STYLE */}
+        <div className="mb-12 h-0.5 bg-linear-to-r from-cyan-200 to-blue-400" />
 
         {/* Top Section */}
         <div className="grid gap-12 md:grid-cols-3">
@@ -29,9 +29,9 @@ export default function Footer() {
           {/* Brand */}
           <div>
             {/* Logo */}
-            <h2 className="text-2xl font-extrabold tracking-tight">
+            <h2 className="text-2xl tracking-tight">
 
-              <span className="ml-2 text-white font-semibold font-sans">
+              <span className="ml-2 text-white  font-machine">
                 H&amp;S Solutions
               </span>
             </h2>
@@ -94,8 +94,8 @@ export default function Footer() {
 
         </div>
 
-        {/* Divider */}
-        <div className="my-12 h-px bg-white" />
+        {/* Bottom Divider */}
+        <div className="my-12 w-3/4 h-0.5 mx-auto bg-linear-to-r from-cyan-200 to-blue-400" />
 
         {/* Bottom */}
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row text-sm text-gray-500">

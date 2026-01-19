@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-linear-to-br from-[#050B14] via-[#0A1A2F] to-[#050B14] text-white">
-      <div className="mx-auto flex max-w-7xl items-center justify-around px-6 py-2">
+      <div className="mx-auto flex max-w-8xl items-center justify-around px-6 py-2">
 
         {/* Logo */}
         <div className="flex items-center gap-2">
@@ -56,7 +56,8 @@ export default function Navbar() {
       </div>
 
       {/* Bottom Divider */}
-      <div className="w-auto h-px bg-cyan-200 to to-blue-400" />
+     <div className="w-4/5 h-0.5 mx-auto bg-linear-to-r from-cyan-200 to-blue-400" />
+
     </nav>
   );
 }

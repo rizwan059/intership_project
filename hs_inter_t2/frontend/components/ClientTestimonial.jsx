@@ -2,20 +2,20 @@ import { formatDistanceToNow } from "date-fns";
 
 export default function ClientSay() {
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-[#050B14] to-[#0A1A2F] text-white">
+    <section className="py-6 px-6 bg-linear-to-b from-[#050B14] to-[#0A1A2F] text-white">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold">
+        <div className="text-center mb-4">
+          {/* <h2 className="text-3xl md:text-4xl font-bold">
             What Our <span className="text-cyan-400">Clients Say</span>
-          </h2>
-          <p className="mt-4 text-gray-400">
+          </h2> */}
+          <p className=" text-gray-400">
             Real feedback from real clients
           </p>
         </div>
 
         {/* Testimonial Card */}
-        <div className="max-w-3xl mx-auto bg-gradient-to-br from-[#0B1F3A] to-[#060F1F] border border-white/10 rounded-2xl p-8 shadow-lg relative">
+        <div className="max-w-3xl mx-auto bg-linear-to-br from-[#0B1F3A] to-[#060F1F] border border-white/10 rounded-2xl p-8 shadow-lg relative">
           {/* Glow Accent */}
           <div className="absolute -top-6 -right-6 w-32 h-32 bg-cyan-400/20 rounded-full blur-3xl" />
 
@@ -33,11 +33,11 @@ export default function ClientSay() {
           {/* Project Info */}
           <div className="mt-6 text-sm text-gray-400">
             <p>
-              <span className="text-gray-300 font-medium">Project:</span> New Project
+              <span className="text-gray-300 font-medium">Project:</span> Website Applicaton Revamp
             </p>
-            <p>
+            {/* <p>
               <span className="text-gray-300 font-medium">Budget:</span> ₹6,500 INR
-            </p>
+            </p> */}
           </div>
 
           {/* Skills */}
