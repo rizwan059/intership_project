@@ -20,7 +20,7 @@ export default function TestimonialsPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-[#050B14] via-[#0A1A2F] to-[#050B14] text-white">
+    <main className="min-h-screen bg-linear-to-br from-[#050B14] via-[#0A1A2F] to-[#050B14] text-white">
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -80,7 +80,7 @@ export default function TestimonialsPage() {
             {testimonials.map((item, index) => (
               <div
                 key={index}
-                className="relative bg-gradient-to-br from-[#0B1F3A] to-[#060F1F] p-8 rounded-2xl border border-white/10 hover:border-cyan-400/40 transition"
+                className="relative bg-linear-to-br from-[#0B1F3A] to-[#060F1F] p-8 rounded-2xl border border-white/10 hover:border-cyan-400/40 transition"
               >
                 {/* Futuristic Accent */}
                 <div className="absolute top-0 right-0 w-24 h-24 bg-cyan-400/10 rounded-bl-full" />

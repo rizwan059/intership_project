@@ -17,70 +17,61 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-200 bg-gray-50">
-      <div className="mx-auto max-w-7xl px-6 py-12">
+    <footer className="bg-linear-to-br from-[#050B14] via-[#0A1A2F] to-[#050B14] text-white">
+      <div className="mx-auto max-w-4xl px-6 py-16">
+
+        {/* ✅ TOP DIVIDER — SAME STYLE */}
+        <div className="mb-12 h-px bg-white" />
 
         {/* Top Section */}
-        <div className="grid gap-10 md:grid-cols-3">
+        <div className="grid gap-12 md:grid-cols-3">
 
           {/* Brand */}
           <div>
-            <h2 className="text-lg font-semibold font-sans text-gray-900">
-              H&S Solutions
+            {/* Logo */}
+            <h2 className="text-2xl font-extrabold tracking-tight">
+
+              <span className="ml-2 text-white font-semibold font-sans">
+                H&amp;S Solutions
+              </span>
             </h2>
 
-            <p className="mt-4 max-w-sm text-sm font-sans text-gray-900">
+            <p className="mt-5 max-w-sm text-sm leading-relaxed text-white">
               Empowering businesses with intelligent, scalable, and
               future-ready digital solutions.
             </p>
 
             {/* Social Icons */}
             <div className="mt-6 flex gap-4">
-              <a
-                href="#"
-                aria-label="Twitter"
-                className="text-gray-900 transition hover:text-blue-600"
-              >
-                <FaTwitter size={20} />
-              </a>
-
-              <a
-                href="#"
-                aria-label="Instagram"
-                className="text-gray-900 transition hover:text-pink-500"
-              >
-                <FaInstagram size={20} />
-              </a>
-
-              <a
-                href="#"
-                aria-label="LinkedIn"
-                className="text-gray-900 transition hover:text-blue-700"
-              >
-                <FaLinkedin size={20} />
-              </a>
-
-              <a
-                href="#"
-                aria-label="GitHub"
-                className="text-gray-900 transition hover:text-gray-900"
-              >
-                <FaGithub size={20} />
-              </a>
+              {[
+                { icon: <FaTwitter />, color: "hover:text-cyan-400" },
+                { icon: <FaInstagram />, color: "hover:text-pink-500" },
+                { icon: <FaLinkedin />, color: "hover:text-blue-500" },
+                { icon: <FaGithub />, color: "hover:text-gray-200" },
+              ].map((item, index) => (
+                <a
+                  key={index}
+                  href="#"
+                  aria-label="Social link"
+                  className={`text-white transition ${item.color}`}
+                >
+                  {item.icon}
+                </a>
+              ))}
             </div>
           </div>
 
           {/* Navigation */}
           <div>
-            <h3 className="text-sm font-semibold tracking-wide font-sans text-gray-900">
-              Quick Links
+            <h3 className="text-sm font-semibold tracking-wider text-white">
+              QUICK LINKS
             </h3>
-            <ul className="mt-4 space-y-2 text-sm font-sans">
+            <ul className="mt-5 space-y-3 text-sm">
               {footerLinks.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-gray-900 font-sans transition hover:text-blue-600"
+                    className="transition hover:text-cyan-400"
                   >
                     {link.name}
                   </Link>
@@ -91,10 +82,10 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-sm font-semibold tracking-wide font-sans text-gray-900">
-              Contact
+            <h3 className="text-sm font-semibold tracking-wider text-white">
+              CONTACT
             </h3>
-            <ul className="mt-4 space-y-2 text-sm font-sans text-gray-900">
+            <ul className="mt-5 space-y-3 text-sm text-white">
               <li>Email: info@hssolutions.com</li>
               <li>Phone: +92 300 0000000</li>
               <li>Location: Pakistan</li>
@@ -104,12 +95,12 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="my-8 h-px bg-gray-200" />
+        <div className="my-12 h-px bg-white" />
 
         {/* Bottom */}
-        <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-          <p className="text-sm font-sans text-gray-900">
-            © {new Date().getFullYear()} H&S Solutions. All rights reserved.
+        <div className="flex flex-col items-center justify-between gap-4 md:flex-row text-sm text-gray-500">
+          <p>
+            © {new Date().getFullYear()} H&amp;S Solutions. All rights reserved.
           </p>
         </div>
 
