@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Logo from "@/components/Logo";
+import ScrollNvbr from "@/components/ScrollNvbr";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -54,14 +55,9 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Bottom Divider */}
-      {/* <div className="w-4/5 h-0.5 mx-auto bg-linear-to-r from-cyan-200 to-blue-400" /> */}
 
-      {/* TOP Neural Divider */}
-      <div className="relative h-0.5 mx-auto">
-        <div className="h-px bg-linear-to-r from-transparent via-cyan-400/40 to-transparent" />
-        <div className="absolute left-1/2 -top-1.5 h-3 w-3 -translate-x-1/2 rounded-full bg-cyan-400 shadow-[0_0_18px_5px_rgba(34,211,238,0.5)] animate-pulse" />
-      </div>
+
+      <ScrollNvbr />
 
     </nav>
   );
