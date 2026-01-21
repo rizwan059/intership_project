@@ -4,7 +4,8 @@ import { useState } from "react";
 
 export default function ContactPage() {
   const [form, setForm] = useState({
-    name: "",
+    fname: "",
+    lname: "",
     email: "",
     message: "",
   });
@@ -20,7 +21,7 @@ export default function ContactPage() {
     e.preventDefault();
     console.log("Contact Form:", form);
     alert("Message sent successfully.");
-    setForm({ name: "", email: "", message: "" });
+    setForm({ fname: "", lname: "", email: "", message: "" });
   };
 
   return (
@@ -106,22 +107,41 @@ export default function ContactPage() {
             className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 space-y-6 hover:border-cyan-400/40 transition"
             aria-label="Contact form"
           >
-            {/* Name */}
+            {/* first Name */}
             <div>
               <label
                 htmlFor="name"
                 className="block text-sm font-medium text-gray-300 mb-1"
               >
-                Full Name
+                First Name
               </label>
               <input
                 id="name"
                 name="name"
                 type="text"
                 required
-                value={form.name}
+                value={form.fname}
                 onChange={handleChange}
-                placeholder="Your full name"
+                placeholder="Please enter your first name"
+                className="w-full rounded-lg bg-black/60 border border-white/10 px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition"
+              />
+            </div>
+            {/* last Name */}
+            <div>
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-300 mb-1"
+              >
+                Last Name
+              </label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                value={form.lname}
+                onChange={handleChange}
+                placeholder="Please Enter Your last name"
                 className="w-full rounded-lg bg-black/60 border border-white/10 px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition"
               />
             </div>

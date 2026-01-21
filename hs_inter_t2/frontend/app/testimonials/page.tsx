@@ -94,10 +94,12 @@ export default function TestimonialsPage() {
                   <p className="text-sm text-cyan-400">{item.role}</p> */}
 
 
-                 <ClientTestimonial />
                 </div>
               </div>
             ))}
+            <ClientTestimonial />
+            <ClientTestimonial />
+            <ClientTestimonial />
           </div>
         </div>
       </section>

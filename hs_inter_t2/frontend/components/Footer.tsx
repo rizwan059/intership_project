@@ -21,10 +21,16 @@ export default function Footer() {
       <div className="mx-auto max-w-5xl px-6 py-16">
 
         {/*  TOP DIVIDER — SAME STYLE */}
-        <div className="mb-12 h-0.5 bg-linear-to-r from-cyan-200 to-blue-400" />
+        {/* <div className="mb-12 h-0.5 bg-linear-to-r from-cyan-200 to-blue-400" /> */}
+
+        {/* TOP Neural Divider */}
+        <div className="relative mb-20 my-12 h-0.5 mx-auto">
+          <div className="h-px bg-linear-to-r from-transparent via-cyan-400/40 to-transparent" />
+          <div className="absolute left-1/2 -top-1.5 h-3 w-3 -translate-x-1/2 rounded-full bg-cyan-400 shadow-[0_0_18px_5px_rgba(34,211,238,0.5)] animate-pulse" />
+        </div>
 
         {/* Top Section */}
-        <div className="grid gap-12 md:grid-cols-3">
+        <div className="grid gap-12 md:grid-cols-3 ">
 
           {/* Brand */}
           <div>
@@ -95,7 +101,13 @@ export default function Footer() {
         </div>
 
         {/* Bottom Divider */}
-        <div className="my-12 w-3/4 h-0.5 mx-auto bg-linear-to-r from-cyan-200 to-blue-400" />
+        {/* <div className="my-12 h-0.5 mx-auto bg-linear-to-r from-cyan-200 to-blue-400" /> */}
+
+        {/* Neural Divider */}
+        <div className="relative mb-20 my-12 h-0.5 mx-auto">
+          <div className="h-px bg-linear-to-r from-transparent via-cyan-400/40 to-transparent" />
+          <div className="absolute left-1/2 -top-1.5 h-3 w-3 -translate-x-1/2 rounded-full bg-cyan-400 shadow-[0_0_18px_5px_rgba(34,211,238,0.5)] animate-pulse" />
+        </div>
 
         {/* Bottom */}
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row text-sm text-gray-500">
