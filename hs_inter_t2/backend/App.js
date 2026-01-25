@@ -1,7 +1,11 @@
 const http = require('http');
 
-http.createServer((res, resp)=>{
-resp.write("<h1>Hello from hs_inter_t2 backend!</h1>");
-resp.end ();
+const arg = process.argv;
+const port = arg[2];                        
 
-}).listen(4800);
+http.createServer((res, resp) => {
+    resp.setHeader('Content-Type', 'text/html');
+    resp.write("<h1>Hello from H&S Solutions!</h1>");
+    resp.end();
+
+}).listen(port);
