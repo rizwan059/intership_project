@@ -1,6 +1,5 @@
 import Link from "next/link";
 import {
-  FaTwitter,
   FaInstagram,
   FaLinkedin,
   FaGithub,
@@ -17,29 +16,21 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-linear-to-br from-[#050B14] via-[#0A1A2F] to-[#050B14] text-white">
-      <div className="mx-auto max-w-5xl px-6 py-16">
+    <footer className="bg-gradient-to-br from-[#64696f] via-[#64696f] to-[#64696f] text-white">
+      <div className="mx-auto max-w-5xl px-6 py-6">
 
-        {/*  TOP DIVIDER — SAME STYLE */}
-        {/* <div className="mb-12 h-0.5 bg-linear-to-r from-cyan-200 to-blue-400" /> */}
-
-        {/* TOP Neural Divider */}
-        <div className="relative mb-20 my-12 h-0.5 mx-auto">
-          <div className="h-px bg-linear-to-r from-transparent via-cyan-400/40 to-transparent" />
-          <div className="absolute left-1/2 -top-1.5 h-3 w-3 -translate-x-1/2 rounded-full bg-cyan-400 shadow-[0_0_18px_5px_rgba(34,211,238,0.5)] animate-pulse" />
+        {/* TOP Divider */}
+        <div className="relative my-6 h-0.5 mx-auto">
+          <div className="h-px bg-gradient-to-r from-transparent via-blue-300/40 to-transparent" />
         </div>
 
         {/* Top Section */}
-        <div className="grid gap-12 md:grid-cols-3 ">
+        <div className="grid gap-12 md:grid-cols-3">
 
           {/* Brand */}
           <div>
-            {/* Logo */}
-            <h2 className="text-2xl tracking-tight">
-
-              <span className="ml-2 text-white  font-machine">
-                H&amp;S Solutions
-              </span>
+            <h2 className="text-2xl tracking-tight font-semibold">
+              H&amp;S Solutions
             </h2>
 
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-white">
@@ -50,14 +41,15 @@ export default function Footer() {
             {/* Social Icons */}
             <div className="mt-6 flex gap-4">
               {[
-                { icon: <FaTwitter />, color: "hover:text-cyan-400" },
-                { icon: <FaInstagram />, color: "hover:text-pink-500" },
-                { icon: <FaLinkedin />, color: "hover:text-blue-500" },
-                { icon: <FaGithub />, color: "hover:text-gray-200" },
+                { icon: <FaInstagram />, href :"https://www.instagram.com/hns.solutions?igsh=MWpremdpNWt0ejZtbQ==",  color: "hover:text-pink-400" },
+                { icon: <FaLinkedin />, href :"https://www.linkedin.com/company/h-s-solutions-biz/", color: "hover:text-blue-300" },
+                { icon: <FaGithub />, href :"https://github.com/azwadev04",  color: "hover:text-cyan-200" },
               ].map((item, index) => (
                 <a
                   key={index}
-                  href="#"
+                  href={item.href || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="Social link"
                   className={`text-white transition ${item.color}`}
                 >
@@ -77,7 +69,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="transition hover:text-cyan-400"
+                    className="text-whitetransition hover:text-blue-300"
                   >
                     {link.name}
                   </Link>
@@ -92,25 +84,21 @@ export default function Footer() {
               CONTACT
             </h3>
             <ul className="mt-5 space-y-3 text-sm text-white">
-              <li>Email: info@hssolutions.com</li>
-              <li>Phone: +92 300 0000000</li>
-              <li>Location: Pakistan</li>
+              <li>Email: hssolutions.bizz@gmail.com</li>
+              <li>Phone: +92 328 4429947</li>
+              <li>Location: 235-1125 Dundas Street East Mississauga ON L4Y 2C4, Mississauga, CA</li>
             </ul>
           </div>
 
         </div>
 
         {/* Bottom Divider */}
-        {/* <div className="my-12 h-0.5 mx-auto bg-linear-to-r from-cyan-200 to-blue-400" /> */}
-
-        {/* Neural Divider */}
-        <div className="relative mb-20 my-12 h-0.5 mx-auto">
-          <div className="h-px bg-linear-to-r from-transparent via-cyan-400/40 to-transparent" />
-          <div className="absolute left-1/2 -top-1.5 h-3 w-3 -translate-x-1/2 rounded-full bg-cyan-400 shadow-[0_0_18px_5px_rgba(34,211,238,0.5)] animate-pulse" />
+        <div className="relative my-8 h-0.5 mx-auto">
+          <div className="h-px bg-gradient-to-r from-transparent via-blue-300/30 to-transparent" />
         </div>
 
         {/* Bottom */}
-        <div className="flex flex-col items-center justify-between gap-4 md:flex-row text-sm text-gray-500">
+        <div className="flex flex-col items-center justify-between gap-4 md:flex-row text-sm text-white">
           <p>
             © {new Date().getFullYear()} H&amp;S Solutions. All rights reserved.
           </p>

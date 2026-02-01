@@ -11,7 +11,8 @@
   "dependencies": {
     "date-fns": "^4.1.0",
     "framer-motion": "^12.25.0",
-    "next": "16.1.1",
+    "mod": "^0.0.0",
+    "next": "^16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-icons": "^5.5.0"
