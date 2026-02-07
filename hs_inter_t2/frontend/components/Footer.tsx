@@ -16,7 +16,7 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-[#64696f] via-[#64696f] to-[#64696f] text-white">
+    <footer className="bg-gradient-to-br from-gray-400 via-gray-500 to-gray-400 text-white">
       <div className="mx-auto max-w-5xl px-6 py-6">
 
         {/* TOP Divider */}
@@ -69,7 +69,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-whitetransition hover:text-blue-300"
+                    className="text-whitetransition hover:text-cyan-300"
                   >
                     {link.name}
                   </Link>

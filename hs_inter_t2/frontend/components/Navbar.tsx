@@ -18,7 +18,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-linear-to-br from-[#36383a] via-[#53585f] to-[#44474b] text-white">
+    <nav className="sticky top-0 z-50 w-full bg-linear-to-br from-gray-300 via-gray-700 to-gray-300 text-white">
       <div className="mx-auto flex max-w-8xl items-center justify-around px-6 py-2">
 
         {/* Logo */}

@@ -20,8 +20,8 @@ export default function NeuralDivider() {
         className={`h-1 transition-all duration-500
           ${
             scrolled
-              ? "bg-linear-to-r from-transparent via-green-400/60 to-transparent"
-              : "bg-linear-to-r from-transparent via-white to-transparent"
+              ? "bg-linear-to-r from-transparent via-white to-transparent"
+              : "bg-linear-to-r from-transparent via-white/50 to-transparent"
           }`}
       />
     </div>
