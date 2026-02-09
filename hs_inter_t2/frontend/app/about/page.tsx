@@ -2,11 +2,11 @@
 
 export default function AboutPage() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-gradient-to-b from-blue-300 via-blue-200 to-blue-300 font-sans">
+    <main className="relative min-h-screen overflow-hidden bg-white font-sans">
 
       {/* Soft Light Fields */}
-      <div className="absolute -top-40 left-1/3 h-[520px] w-[520px] rounded-full bg-blue-300/20 blur-3xl" />
-      <div className="absolute bottom-0 -right-40 h-[520px] w-[520px] rounded-full bg-sky-300/20 blur-3xl" />
+      {/* <div className="absolute -top-40 left-1/3 h-[520px] w-[520px] rounded-full bg-blue-300/20 blur-3xl" />
+      <div className="absolute bottom-0 -right-40 h-[520px] w-[520px] rounded-full bg-sky-300/20 blur-3xl" /> */}
 
       <section className="relative z-10 max-w-7xl mx-auto px-6 py-24">
 
@@ -47,13 +47,13 @@ export default function AboutPage() {
 
 
         {/* Mission */}
-        <div className="mb-24 py-6 shadow-[0_4px_12px_rgba(0,0,0,1)] rounded-2xl">
-          <h1 className="text-4xl md:text-6xl my-6 text-center font-bold tracking-tight text-gray-600">
+        <div className="mb-24 py-6 shadow-[0_4px_12px_rgba(0,0,0,1)] rounded-2xl bg-[#7F9DB1]">
+          <h1 className="text-4xl md:text-6xl my-6 text-center font-bold tracking-tight text-black">
             Our Mission
           </h1>
-          <section className="rounded-2xl border mx-6 mb-4 border-blue-200 bg-white/80 p-6 text-center">
+          <section className="rounded-2xl border mx-6 mb-4 border-blue-200 bg-[#B4D6E3] p-6 text-center">
 
-            <p className="text-gray-800 leading-relaxed">
+            <p className="text-black leading-relaxed">
               We don’t just build AI solutions — we engineer intelligent systems
               designed to grow, adapt, and perform.
             </p>

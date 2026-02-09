@@ -16,7 +16,7 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-gray-400 via-gray-500 to-gray-400 text-white">
+    <footer className="bg-gradient-to-br from-black via-black to-black text-white">
       <div className="mx-auto max-w-5xl px-6 py-6">
 
         {/* TOP Divider */}
@@ -41,9 +41,9 @@ export default function Footer() {
             {/* Social Icons */}
             <div className="mt-6 flex gap-4">
               {[
-                { icon: <FaInstagram />, href :"https://www.instagram.com/hns.solutions?igsh=MWpremdpNWt0ejZtbQ==",  color: "hover:text-pink-400" },
-                { icon: <FaLinkedin />, href :"https://www.linkedin.com/company/h-s-solutions-biz/", color: "hover:text-blue-300" },
-                { icon: <FaGithub />, href :"https://github.com/azwadev04",  color: "hover:text-cyan-200" },
+                { icon: <FaInstagram />, href :"https://www.instagram.com/hns.solutions?igsh=MWpremdpNWt0ejZtbQ==",  color: "hover:text-[#0D3B66]" },
+                { icon: <FaLinkedin />, href :"https://www.linkedin.com/company/h-s-solutions-biz/", color: "hover:text-[#0D3B66]" },
+                { icon: <FaGithub />, href :"https://github.com/azwadev04",  color: "hover:text-[#0D3B66] " },
               ].map((item, index) => (
                 <a
                   key={index}
@@ -51,7 +51,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Social link"
-                  className={`text-white transition ${item.color}`}
+                  className={`text-white hover:[#0D3B66] transition ${item.color}`}
                 >
                   {item.icon}
                 </a>

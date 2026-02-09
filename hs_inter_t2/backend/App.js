@@ -13,6 +13,15 @@ http.createServer((res, resp) => {
             resp.end("internal function is running");
             return;
         }
+
+        if (res.url == "/") {
+            resp.writeHead(200, { 'Content-Type': 'text/html' });
+            resp.write(data);
+        } else if (res.url == "/submit") {
+            resp.writeHead(200, { 'Content-Type': 'text/html' });
+            resp.write("<h1>Form submitted successfully!</h1>");
+        }
+
     });
     resp.end("Hello from hs_inter_t2 backend!");
 
