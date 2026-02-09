@@ -18,7 +18,10 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-linear-to-br from-black via-black to-black text-white">
+    
+      <nav className="sticky top-0 z-50 w-full  bg-white/10 backdrop-blur-md border-b border-white/20  text-white">
+    
+
       <div className="mx-auto flex max-w-8xl items-center justify-around px-6 py-2">
 
         {/* Logo */}
@@ -60,5 +63,8 @@ export default function Navbar() {
       <ScrollNvbr />
 
     </nav>
+
+
+
   );
 }

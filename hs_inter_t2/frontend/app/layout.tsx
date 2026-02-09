@@ -4,7 +4,7 @@ import "./globals.css";
 import Link from 'next/link'
 import Image from "next/image";
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar3";
 
 
 
