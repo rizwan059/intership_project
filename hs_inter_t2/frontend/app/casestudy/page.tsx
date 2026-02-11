@@ -3,7 +3,7 @@
 export default function AboutPage() {
   return (
     // <main className="relative min-h-screen overflow-hidden bg-white/90 font-sans">
-    <main className="relative min-h-screen overflow-hidden bg-[#B4D6E3] font-sans">
+    <main className="relative min-h-screen overflow-hidden bg-white font-sans">
 
       {/* Soft Light Fields */}
       {/* <div className="absolute -top-40 left-1/3 h-[520px] w-[520px] rounded-full bg-blue-300/20 blur-3xl" />

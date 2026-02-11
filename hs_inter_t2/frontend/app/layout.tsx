@@ -4,7 +4,7 @@ import "./globals.css";
 import Link from 'next/link'
 import Image from "next/image";
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar3";
+import Navbar from "@/components/Navbar";
 
 
 
@@ -25,7 +25,7 @@ const geistMono = Geist_Mono({
 // };
 
 export const metadata = {
-  title: "AI‑based agency",
+  title: "H&S Solutions",
   icons: {
     icon: "/favicon.svg",
   },
