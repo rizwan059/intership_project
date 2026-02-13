@@ -12,7 +12,7 @@ function ProblemSection() {
 
         <div className="max-w-6xl w-full">
 
-          <h2 className="text-5xl  font-sans mb-12 text-white  text-center">
+          <h2 className="text-4xl font-semibold font-sans mb-12 text-white  text-center">
             Sound Familiar?
           </h2>
 

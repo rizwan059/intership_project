@@ -11,7 +11,7 @@ function HowItWorks() {
       <section className="min-h-132 flex text-center justify-center bg-white">
 
         <div className="max-w-6xl w-full text-center">
-          <h2 className="text-5xl font-semibold text-black py-12">How It Works</h2>
+          <h2 className="text-4xl font-semibold text-black py-12">How It Works</h2>
 
 
           <div className="max-w-6xl space-y-8">

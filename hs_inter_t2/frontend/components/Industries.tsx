@@ -13,7 +13,7 @@ function Industries() {
 
                 <div className="max-w-6xl w-full text-center">
 
-                    <h2 className="text-5xl font-sans mb-6 text-black">
+                    <h2 className="text-4xl font-semibold font-sans mb-6 text-black">
                         Industries We Serve
                     </h2>
 
