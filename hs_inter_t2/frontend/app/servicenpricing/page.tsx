@@ -24,22 +24,22 @@ export default function PartnersPage() {
           </div>
 
           {/* Grid */}
-       
+
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
 
             {/* Card 1  Starter $1500 */}
             {/* Card 1  Starter $1500 */}
-            
-            <div className="w-full max-w-md bg-white border-2 hover:border-blue-500 rounded-2xl p-10 shadow-sm">
+
+            <div className="p-8 border hover:border-2 hover:border-blue-500 bg-white/90 rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
 
               {/* Plan Name */}
               <h3 className="text-2xl font-semibold text-center text-gray-900 mb-6">
-                Complete
+                Starter
               </h3>
 
               {/* Price */}
               <div className="text-center mb-2">
-                <span className="text-5xl font-bold text-blue-600">$4,500</span>
+                <span className="text-5xl font-bold text-blue-600">$1,500</span>
               </div>
 
               <p className="text-center text-gray-500 mb-10">
@@ -50,45 +50,29 @@ export default function PartnersPage() {
               <ul className="space-y-5 mb-10">
                 <li className="flex items-center gap-3 border-b pb-1">
                   <span className="text-green-500 text-lg">✓</span>
-                  <span className="text-gray-700">5-7 comprehensive automations</span>
+                  <span className="text-gray-700">1-2 core automations</span>
                 </li>
 
                 <li className="flex items-center gap-3 border-b pb-1">
                   <span className="text-green-500 text-lg">✓</span>
-                  <span className="text-gray-700">4-6 week implementation</span>
+                  <span className="text-gray-700">2-week implementation</span>
                 </li>
 
                 <li className="flex items-center gap-3 border-b pb-1">
                   <span className="text-green-500 text-lg">✓</span>
-                  <span className="text-gray-700">Complete workflow overhaul</span>
+                  <span className="text-gray-700">Email + calendar integration</span>
                 </li>
 
                 <li className="flex items-center gap-3 border-b pb-1">
                   <span className="text-green-500 text-lg">✓</span>
-                  <span className="text-gray-700">Custom dashboards</span>
+                  <span className="text-gray-700">30 days support</span>
                 </li>
+
 
                 <li className="flex items-center gap-3">
                   <span className="text-green-500 text-lg">✓</span>
-                  <span className="text-gray-700">Multi-tool integration</span>
+                  <span className="text-gray-700">Training session</span>
                 </li>
-
-                <li className="flex items-center gap-3">
-                  <span className="text-green-500 text-lg">✓</span>
-                  <span className="text-gray-700">Advanced analytics</span>
-                </li>
-
-                <li className="flex items-center gap-3">
-                  <span className="text-green-500 text-lg">✓</span>
-                  <span className="text-gray-700">6 months support</span>
-                </li>
-
-                <li className="flex items-center gap-3">
-                  <span className="text-green-500 text-lg">✓</span>
-                  <span className="text-gray-700">Unlimited training</span>
-                </li>
-
-
 
 
               </ul>
@@ -108,6 +92,7 @@ export default function PartnersPage() {
             {/* Card 2 MOST POPULAR $2500 */}
             {/* Card 2 MOST POPULAR $2500 */}
             <div className="relative w-full max-w-md">
+
 
               {/* Badge */}
               <div className="absolute -top-5 left-1/2 -translate-x-1/2">
@@ -137,23 +122,38 @@ export default function PartnersPage() {
                 <ul className="space-y-5 mb-10">
                   <li className="flex items-center gap-3 border-b pb-4">
                     <span className="text-green-500 text-lg">✓</span>
-                    <span className="text-gray-700">Everything in Starter</span>
+                    <span className="text-gray-700">3-4 powerful automations</span>
                   </li>
 
                   <li className="flex items-center gap-3 border-b pb-4">
                     <span className="text-green-500 text-lg">✓</span>
-                    <span className="text-gray-700">Advanced automations</span>
+                    <span className="text-gray-700">3-4 week implementation</span>
                   </li>
 
                   <li className="flex items-center gap-3 border-b pb-4">
                     <span className="text-green-500 text-lg">✓</span>
-                    <span className="text-gray-700">CRM integrations</span>
+                    <span className="text-gray-700">Full CRM setup & sync</span>
                   </li>
 
                   <li className="flex items-center gap-3">
                     <span className="text-green-500 text-lg">✓</span>
-                    <span className="text-gray-700">Priority support</span>
+                    <span className="text-gray-700">Email sequence automation</span>
                   </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-green-500 text-lg">✓</span>
+                    <span className="text-gray-700">Payment & invoicing</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-green-500 text-lg">✓</span>
+                    <span className="text-gray-700">90 days support</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-green-500 text-lg">✓</span>
+                    <span className="text-gray-700">2 training sessions</span>
+                  </li>
+
+
+
                 </ul>
 
                 {/* Button */}
@@ -161,12 +161,17 @@ export default function PartnersPage() {
                   Get Started
                 </button>
 
+                {/* Bottom Text */}
+                <p className="text-center text-sm text-gray-500 mt-6">
+                  Best for: Growing businesses, e-commerce, <br />real estate
+                </p>
+
               </div>
             </div>
 
             {/* Card 3  Complete $4500 */}
             {/* Card 3  Complete $4500 */}
-            <div className="w-full max-w-md bg-white border-2 hover:border-blue-500 rounded-2xl p-10 shadow-sm">
+            <div className="p-8 border hover:border-2 hover:border-blue-500 bg-white/90 rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
 
               {/* Plan Name */}
               <h3 className="text-2xl font-semibold text-center text-gray-900 mb-6">
@@ -236,13 +241,10 @@ export default function PartnersPage() {
 
               {/* Bottom Text */}
               <p className="text-center text-sm text-gray-500 mt-6">
-                Best for: Solo entrepreneurs, new <br />businesses
+                Best for: Multi-location, agencies, high- <br />volume
               </p>
 
             </div>
-
-
-
 
 
           </div>
@@ -338,8 +340,8 @@ export default function PartnersPage() {
             Not Sure Which Package?
           </h1>
 
-          <p className="text-md text-gray-600 mb-8">
-            Book a free 30-minute call. We'll recommend the right fit for your business and walk you through exactly what you'll get.
+          <p className="text-xl text-gray-600 mb-8">
+            Book a free 30-minute call. We'll recommend the right fit for your business and walk you through <br />exactly what you'll get.
           </p>
 
           <div className="flex justify-center gap-4">

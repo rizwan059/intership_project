@@ -1,201 +1,83 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
-export default function ContactPage() {
-  const [form, setForm] = useState({
-    fname: "",
-    lname: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Contact Form:", form);
-    alert("Message sent successfully.");
-    setForm({ fname: "", lname: "", email: "", message: "" });
-  };
+export default function BookACall() {
 
   return (
     <main
-      className="relative min-h-screen overflow-hidden bg-black text-white font-sans"
-      aria-labelledby="contact-heading"
+      className="bg-white"
     >
-      {/* Subtle Animated AI Grid */}
-      <div
-        aria-hidden
-        className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.06)_1px,transparent_0)] bg-size:48px_48px opacity-40"
-      />
 
-      {/* Abstract Neural Glows */}
-      <div
-        aria-hidden
-        className="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-cyan-500/20 blur-3xl animate-pulse"
-      />
-      <div
-        aria-hidden
-        className="absolute top-1/3 -right-32 h-96 w-96 rounded-full bg-indigo-500/20 blur-3xl animate-pulse"
-      />
+      {/* Not Sure Which Package? Section*/}
+      {/* Not Sure Which Package? Section*/}
+      <section className="min-h-84 flex items-center justify-center bg-blue-50 px-6">
+        <div className="max-w-8xl text-center">
 
-      <section className="relative z-10 max-w-6xl mx-auto px-6 py-24">
-        {/* SEO + Header */}
-        <header className="text-center mb-20">
-          <h1
-            id="contact-heading"
-            className="text-4xl md:text-6xl font-sans  tracking-tight bg-linear-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent"
-          >
-            Contact Intelligence Hub
+          <h1 className="text-5xl font-semibold text-gray-800 leading-tight mb-8">
+            Book Your Free Consultation
           </h1>
-          <p className="mt-6 max-w-xl mx-auto text-white font-sans leading-relaxed">
-            Connect with our AI systems. Submit your inquiry and our intelligent
-            workflows will route it to the right channel.
-          </p>
-        </header>
 
-        {/* Neural Divider */}
-        <div className="relative mb-20">
-          <div className="h-px bg-linear-to-r from-transparent via-cyan-400/40 to-transparent" />
-          <div className="absolute left-1/2 -top-1.5 h-3 w-3 -translate-x-1/2 rounded-full bg-cyan-400 shadow-[0_0_18px_5px_rgba(34,211,238,0.5)] animate-pulse" />
+          <p className="text-xl text-gray-600 mb-8">
+            30 minutes that could save you 10+ hours per week. We'll map your <br />
+            workflow, identify automation opportunities, and give you a custom plan— <br />
+            even if we never work together.
+          </p>
+
+
         </div>
 
-        {/* Layout Grid */}
-        <div className="grid gap-12 lg:grid-cols-2 items-start">
-          {/* Info Panel */}
-          <aside className="space-y-8">
-            <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6 hover:border-cyan-400/40 transition">
-              <h2 className="text-xl font-semibold text-white mb-2">
-                AI-Powered Communication
-              </h2>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Our systems analyze and route every message using intelligent
-                classification models to ensure faster, more accurate responses.
+
+      </section>
+
+
+
+      {/* What You'll Get on This Call*/}
+      {/* What You'll Get on This Call*/}
+      <section className="min-h-84 flex items-center justify-center mt-12">
+
+        <div className="max-w-7xl px-6">
+
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-12">
+
+            {/* Card 1 Lead Management*/}
+            <div className=" p-8 text-left border  bg-blue-50/40 rounded-xl shadow-sm ">
+
+              <h3 className="text-lg text-blue-500 font-semibold ">Lead Management</h3>
+              <p className="text-md text-gray-600 mt-4">
+                Automated lead capture, instant follow-ups, CRM data entry, lead scoring, and nurture sequences.
               </p>
 
-              <div className="mt-6 flex items-center gap-2 text-cyan-400 text-xs tracking-widest">
-                <span className="h-2 w-2 rounded-full bg-cyan-400 animate-pulse" />
-                NEURAL ROUTING ACTIVE
-              </div>
             </div>
 
-            <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6 hover:border-indigo-400/40 transition">
-              <h2 className="text-xl font-semibold text-white mb-2">
-                Data-Driven Operations
-              </h2>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Each submission is logged, categorized, and prioritized using
-                real-time analytics for maximum efficiency.
+            {/* Card 2 Scheduling & Booking*/}
+            <div className="p-8 text-left border hover:border-blue-500 bg-blue-50/40 rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
+
+              <h3 className="text-lg text-blue-500 font-semibold ">Scheduling & Booking</h3>
+              <p className="text-md text-gray-600 mt-4">
+                Appointment automation, calendar syncing, reminder emails/SMS, and no-show reduction.
               </p>
 
-              <div className="mt-6 flex items-center gap-2 text-indigo-400 text-xs tracking-widest">
-                <span className="h-2 w-2 rounded-full bg-indigo-400 animate-pulse" />
-                DATA STREAM VERIFIED
-              </div>
-            </div>
-          </aside>
-
-          {/* Contact Form */}
-          <form
-            onSubmit={handleSubmit}
-            className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 space-y-6 hover:border-cyan-400/40 transition"
-            aria-label="Contact form"
-          >
-            {/* first Name */}
-            <div>
-              <label
-                htmlFor="name"
-                className="block text-sm font-medium text-gray-300 mb-1"
-              >
-                First Name
-              </label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                required
-                value={form.fname}
-                onChange={handleChange}
-                placeholder="Please enter your first name"
-                className="w-full rounded-lg bg-black/60 border border-white/10 px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition"
-              />
-            </div>
-            {/* last Name */}
-            <div>
-              <label
-                htmlFor="name"
-                className="block text-sm font-medium text-gray-300 mb-1"
-              >
-                Last Name
-              </label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                required
-                value={form.lname}
-                onChange={handleChange}
-                placeholder="Please Enter Your last name"
-                className="w-full rounded-lg bg-black/60 border border-white/10 px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition"
-              />
             </div>
 
-            {/* Email */}
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-gray-300 mb-1"
-              >
-                Email Address
-              </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                value={form.email}
-                onChange={handleChange}
-                placeholder="Please enter your email"
-                className="w-full rounded-lg bg-black/60 border border-white/10 px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition"
-              />
+            {/* Card 3  Customer Communication*/}
+            <div className="p-8 text-center border  bg-blue-50/40 rounded-xl shadow-sm mb-24">
+
+              <h3 className="text-2xl text-gray-800 font-semibold ">No Sales Pitch. No Pressure. Just Strategy.</h3>
+              <p className="text-lg text-gray-600 mt-4">
+                We'll give you actionable advice whether you work with us or not. That's our promise.
+              </p>
+
             </div>
 
-            {/* Message */}
-            <div>
-              <label
-                htmlFor="message"
-                className="block text-sm font-medium text-gray-300 mb-1"
-              >
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={5}
-                required
-                value={form.message}
-                onChange={handleChange}
-                placeholder="Describe your inquiry..."
-                className="w-full rounded-lg bg-black/60 border border-white/10 px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition"
-              />
-            </div>
 
-            {/* Submit */}
-            <button
-              type="submit"
-              className="w-full rounded-xl bg-linear-to-r from-cyan-500 to-indigo-500 py-3 text-sm font-semibold text-black hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition"
-            >
-              Transmit Message
-            </button>
-          </form>
+
+          </div>
         </div>
       </section>
+
     </main>
   );
 }
