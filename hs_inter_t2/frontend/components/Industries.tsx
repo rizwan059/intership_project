@@ -2,6 +2,8 @@
 
 
 
+import { Home, Building2, MapPin, Key, BedDouble, Coffee, Bell } from "lucide-react";
+
 import React from 'react'
 
 function Industries() {
@@ -26,37 +28,37 @@ function Industries() {
 
                         {/* Card 1 */}
                         <div className="p-8 border hover:border-blue-500 bg-white/90 rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
-                            <div className="text-4xl mb-4 ">🏡</div>
+                            <div className="text-8xl mb-4 "><MapPin size={32} /></div>
                             <h3 className="text-md text-gray-800 font-semibold">Real Estate</h3>
                         </div>
 
                         {/* Card 2 */}
                         <div className="p-8 border hover:border-blue-500 bg-white/90 rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
-                            <div className="text-4xl mb-4">🛍️</div>
+                            <div className="text-8xl mb-4">🛒</div>
                             <h3 className="text-md text-gray-800 font-semibold">E-commerce</h3>
                         </div>
 
                         {/* Card 3 */}
                         <div className="p-8 border hover:border-blue-500 bg-white/90 rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
-                            <div className="text-4xl mb-4">💼</div>
+                            <div className="text-8xl mb-4">🎓</div>
                             <h3 className="text-md text-gray-800 font-semibold">Coaching & Consulting</h3>
                         </div>
 
                         {/* Card 4 */}
                         <div className="p-8 border hover:border-blue-500 bg-white/90 rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
-                            <div className="text-4xl mb-4">💪</div>
+                            <div className="text-8xl mb-4">🧘</div>
                             <h3 className="text-md text-gray-800 font-semibold">Health & Wellness</h3>
                         </div>
 
                         {/* Card 5 */}
                         <div className="p-8 border hover:border-blue-500 bg-white/90 rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
-                            <div className="text-4xl mb-4">🔧</div>
+                            <div className="text-8xl mb-4">🛠️</div>
                             <h3 className="text-md text-gray-800 font-semibold">Home Services</h3>
                         </div>
 
                         {/* Card 6 */}
                         <div className="p-8 border hover:border-blue-500 bg-white/90 rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
-                            <div className="text-4xl mb-4">🏨</div>
+                            <div className="text-8xl mb-4">🏨</div>
                             <h3 className="text-md text-gray-800 font-semibold">Hospitality</h3>
                         </div>
 
