@@ -18,7 +18,7 @@ function HowItWorks() {
 
             {/* Step 1 */}
             <div className="flex items-start gap-8">
-              <div className="flex items-center justify-center w-15 h-15 rounded-full bg-blue-600 text-white text-2xl font-bold shrink-0">
+              <div className="flex items-center justify-center w-15 h-15 rounded-full bg-gradient-to-r from-cyan-400 to-white/80 text-white text-2xl font-bold shrink-0">
                 1
               </div>
 
@@ -36,7 +36,7 @@ function HowItWorks() {
 
             {/* Step 2 */}
             <div className="flex items-start gap-8">
-              <div className="flex items-center justify-center w-15 h-15 rounded-full bg-blue-600 text-white text-2xl font-bold shrink-0">
+              <div className="flex items-center justify-center w-15 h-15 rounded-full bg-gradient-to-r from-cyan-400 to-white/80 text-white text-2xl font-bold shrink-0">
                 2
               </div>
 
@@ -53,7 +53,7 @@ function HowItWorks() {
 
             {/* Step 3 */}
             <div className="flex items-start gap-8">
-              <div className="flex items-center justify-center w-15 h-15 rounded-full bg-blue-600 text-white text-2xl font-bold shrink-0">
+              <div className="flex items-center justify-center w-15 h-15 rounded-full bg-gradient-to-r from-cyan-400 to-white/80 text-white text-2xl font-bold shrink-0">
                 3
               </div>
 

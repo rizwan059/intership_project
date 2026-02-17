@@ -23,7 +23,7 @@ function SocialProof() {
             </p>
 
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-cyan-400 to-white/80 text-white flex items-center justify-center font-semibold">
                 SK
               </div>
               <div>
@@ -43,10 +43,10 @@ function SocialProof() {
             </p>
 
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-cyan-400 to-white/80 text-white flex items-center justify-center font-semibold">
                 MJ
               </div>
-              <div>
+              <div className="pt-6">
                 <h4 className="font-semibold text-gray-900">Mike J.</h4>
                 <p className="text-sm text-gray-500">
                   E-commerce Owner, CA
@@ -63,7 +63,7 @@ function SocialProof() {
             </p>
 
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-cyan-400 to-white/80 text-white flex items-center justify-center font-semibold">
                 LP
               </div>
               <div>

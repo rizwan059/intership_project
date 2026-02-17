@@ -7,7 +7,7 @@ export default function Hero() {
         <main className="">
 
             {/* Section 1 – Hero */}
-            <section className="min-h-132 flex items-center justify-center bg-blue-200 px-6">
+            <section className="min-h-132 flex items-center justify-center bg-blue-100 px-6">
                 <div className="max-w-8xl text-center">
 
                     <h1 className="text-2xl md:text-6xl text-black leading-tight mb-8">

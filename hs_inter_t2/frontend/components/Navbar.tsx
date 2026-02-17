@@ -39,7 +39,7 @@ export default function Navbar() {
                 className={`relative text-sm font-medium transition px-6 py-2 rounded-md
           ${
             link.isButton
-              ? "bg-blue-600 text-white hover:bg-blue-600"
+              ? "bg-cyan-300 text-gray-800 hover:gradient-to-r from-cyan-400 to-blue-500 hover:text-white transform transition duration-300 hover:-translate-y-1"
               : isActive
               ? "text-blue-400"
               : "text-black hover:text-blue-400"
