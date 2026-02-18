@@ -8,7 +8,7 @@ function FinalCTA() {
         <div>
 
             {/* SECTION 6: Final CTA*/}
-            <section className="min-h-84  bg-blue-200">
+            <section className="min-h-84  bg-gradient-to-r from-green-100 to-cyan-200">
 
                 <div className="max-w-132 mx-auto flex items-center justify-center flex-col gap-6 py-12 px-6 text-center">
 
@@ -21,7 +21,7 @@ function FinalCTA() {
 
                     {/* "Book your Free Consultation" (links to /book) */}
                     <Link href="/book-call">
-                        <button className="px-6 py-3 border hover:border-blue-500 bg-white/90 text-blue-500 rounded-lg transform transition duration-300 hover:-translate-y-2  cursor-pointer">
+                        <button className="px-6 py-3 border-blue-500 text-blue-500 rounded-lg bg-gradient-to-r from-cyan-400 to-blue-500 text-white">
                             Book Your Free Consultation
                         </button>
                     </Link>

@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function PartnersPage() {
   return (
     <main
-      className=" min-h-screen  bg-white font-sans">
+      className=" min-h-screen  bg-blue-50 font-sans">
 
 
       {/* Services & Pricingsection*/}
@@ -30,7 +30,7 @@ export default function PartnersPage() {
             {/* Card 1  Starter $1500 */}
             {/* Card 1  Starter $1500 */}
 
-            <div className="p-8 border hover:border-2 hover:border-blue-500 bg-white/90 rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
+            <div className="p-8 border hover:border-2 hover:border-blue-500 bg-white rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
 
               {/* Plan Name */}
               <h3 className="text-2xl font-semibold text-center text-gray-900 mb-6">
@@ -180,7 +180,7 @@ export default function PartnersPage() {
 
               {/* Price */}
               <div className="text-center mb-2">
-                <span className="text-5xl font-bold text-blue-600">$4,500</span>
+                <span className="text-5xl font-bold text-blue-600">Custom</span>
               </div>
 
               <p className="text-center text-gray-500 mb-10">
@@ -259,67 +259,67 @@ export default function PartnersPage() {
 
         <div className="max-w-6xl w-full text-center">
 
-          <h2 className="text-4xl font-semibold font-sans mb-16 text-black">
+          <h2 className="text-5xl font-semibold mb-16 text-black font-serif">
             What We Automate
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
 
             {/* Card 1 Lead Management*/}
-            <div className="p-8 text-left border hover:border-blue-500 bg-blue-50/40 rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
+            <div className="p-8 text-left border hover:border-blue-500 bg-white rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
 
-              <h3 className="text-lg text-blue-500 font-semibold ">Lead Management</h3>
-              <p className="text-md text-gray-600 mt-4">
+              <h3 className="text-2xl text-blue-500 font-semibold ">Lead Management</h3>
+              <p className="text-md text-black mt-4">
                 Automated lead capture, instant follow-ups, CRM data entry, lead scoring, and nurture sequences.
               </p>
 
             </div>
 
             {/* Card 2 Scheduling & Booking*/}
-            <div className="p-8 text-left border hover:border-blue-500 bg-blue-50/40 rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
+            <div className="p-8 text-left border hover:border-blue-500 bg-white rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
 
-              <h3 className="text-lg text-blue-500 font-semibold ">Scheduling & Booking</h3>
-              <p className="text-md text-gray-600 mt-4">
+              <h3 className="text-2xl text-blue-500 font-semibold ">Scheduling & Booking</h3>
+              <p className="text-md text-black mt-4">
                 Appointment automation, calendar syncing, reminder emails/SMS, and no-show reduction.
               </p>
 
             </div>
 
             {/* Card 3  Customer Communication*/}
-            <div className="p-8 text-left border hover:border-blue-500 bg-blue-50/40 rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
+            <div className="p-8 text-left border hover:border-blue-500 bg-white rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
 
-              <h3 className="text-lg text-blue-500 font-semibold ">Customer Communication</h3>
-              <p className="text-md text-gray-600 mt-4">
+              <h3 className="text-2xl text-blue-500 font-semibold ">Customer Communication</h3>
+              <p className="text-md text-black mt-4">
                 Email sequences, SMS campaigns, post-purchase follow-ups, and review requests.
               </p>
 
             </div>
 
             {/* Card 4 Invoicing & Payments*/}
-            <div className="p-8 text-left border hover:border-blue-500 bg-blue-50/40 rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
+            <div className="p-8 text-left border hover:border-blue-500 bg-white rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
 
-              <h3 className="text-lg text-blue-500 font-semibold ">Invoicing & Payments</h3>
-              <p className="text-md text-gray-600 mt-4">
+              <h3 className="text-2xl text-blue-500 font-semibold ">Invoicing & Payments</h3>
+              <p className="text-md text-black mt-4">
                 Auto-generate invoices, payment reminders, receipt delivery, and accounting sync.
               </p>
 
             </div>
 
             {/* Card 5 Client Onboarding*/}
-            <div className="p-8 text-left border hover:border-blue-500 bg-blue-50/40 rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
+            <div className="p-8 text-left border hover:border-blue-500 bg-white rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
 
-              <h3 className="text-lg text-blue-500 font-semibold ">Client Onboarding</h3>
-              <p className="text-md text-gray-600 mt-4">
+              <h3 className="text-2xl text-blue-500 font-semibold ">Client Onboarding</h3>
+              <p className="text-md text-black mt-4">
                 Welcome sequences, document collection, contract signing, and initial setup automation.
               </p>
 
             </div>
 
             {/* Card 6 E-commerce*/}
-            <div className="p-8 text-left border hover:border-blue-500 bg-blue-50/40 rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
+            <div className="p-8 text-left border hover:border-blue-500 bg-white rounded-xl shadow-sm hover:shadow-lg transition hover:-translate-y-2 cursor-pointer">
 
-              <h3 className="text-lg text-blue-500 font-semibold ">E-commerce</h3>
-              <p className="text-md text-gray-600 mt-4">
+              <h3 className="text-2xl text-blue-500 font-semibold ">E-commerce</h3>
+              <p className="text-md text-black   mt-4">
                 Abandoned cart recovery, order tracking, inventory alerts, and customer win-back campaigns.
               </p>
 
@@ -348,7 +348,7 @@ export default function PartnersPage() {
 
             {/* "Book Free Consultation" (links to /book) */}
             <Link href="/book-call">
-              <button className="px-6 py-3 bg-blue-500 text-white rounded-lg transform transition duration-300 hover:-translate-y-2  cursor-pointer">
+              <button className="px-6 py-3 bg-gradient-to-r from-cyan-400 to-blue-400 text-white rounded-lg transform transition duration-300 hover:-translate-y-2  cursor-pointer">
                 Book Free Consultation
               </button>
             </Link>

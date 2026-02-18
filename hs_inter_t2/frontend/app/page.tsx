@@ -15,8 +15,8 @@ export default function Home() {
     <div className="">
       <Hero />
       <Industries />
-      <ProblemSection />
       <HowItWorks />
+      <ProblemSection />
       <SocialProof />
       <FinalCTA />
     </div>

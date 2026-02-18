@@ -8,7 +8,7 @@ function ProblemSection() {
 
 
       {/* SECTION 3: The Problem (3 Columns)*/}
-      <section className="min-h-132 flex items-center justify-center bg-blue-100 px-6">
+      <section className="min-h-132 flex items-center justify-center bg-blue-50 px-6">
 
         <div className="max-w-6xl w-full">
 
@@ -19,7 +19,7 @@ function ProblemSection() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 ">
 
             {/* problem Card 1 */}
-            <div className="p-8 border-l-4 border-gray-400 bg-gradient-to-r from-cyan-100 to-white  rounded-xl shadow-sm hover:shadow-lg transition ">
+            <div className="p-8 border-l-4 border-gray-400 bg-gradient-to-r from-cyan-200 to-white  rounded-xl shadow-sm hover:shadow-lg transition ">
               <div className="text-4xl mb-4">⏰</div>
               <h3 className="text-2xl text-gray-800 font-bold text-left">10+ Hours Wasted Weekly</h3>
 
@@ -30,7 +30,7 @@ function ProblemSection() {
             </div>
 
             {/* problem Card 2 */}
-            <div className="p-8 border-l-4 border-gray-400 bg-gradient-to-r from-cyan-100 to-white rounded-xl shadow-sm hover:shadow-lg transition ">
+            <div className="p-8 border-l-4 border-gray-400 bg-gradient-to-r from-cyan-200 to-white rounded-xl shadow-sm hover:shadow-lg transition ">
               <div className="text-4xl mb-4">🔗</div>
               <h3 className="text-2xl text-gray-800 font-bold text-left">Tools That Don't Talk</h3>
 
@@ -41,7 +41,7 @@ function ProblemSection() {
             </div>
 
             {/* problem Card 3 */}
-            <div className="p-8 border-l-4 border-gray-400 bg-gradient-to-r from-cyan-100 to-white  rounded-xl shadow-sm hover:shadow-lg transition ">
+            <div className="p-8 border-l-4 border-gray-400 bg-gradient-to-r from-cyan-200 to-white  rounded-xl shadow-sm hover:shadow-lg transition ">
               <div className="text-4xl mb-4">💸</div>
               <h3 className="text-2xl text-gray-800 font-bold text-left">Revenue Left on Table</h3>
 
