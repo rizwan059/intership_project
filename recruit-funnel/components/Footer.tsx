@@ -18,10 +18,9 @@ export default function Footer() {
                 </svg>
               </div>
               <span className="font-display font-bold text-base text-cream">
-                RecruitFlow<span className="text-accent">.</span>
-              </span>
+                H&S Solutions              </span>
             </div>
-            <p className="text-xs font-mono text-cream/40 max-w-xs leading-relaxed">
+            <p className="text-md font-sans text-white max-w-xs leading-relaxed">
               Workflow automation for staffing agencies. Stop losing placements to manual ops.
             </p>
           </div>
@@ -29,7 +28,7 @@ export default function Footer() {
           {/* Links */}
           <div className="flex flex-col sm:flex-row gap-6 sm:gap-12">
             <div>
-              <div className="font-mono text-[10px] text-cream/30 uppercase tracking-widest mb-3">
+              <div className="font-sans text-sm font-semibold text-white uppercase tracking-widest mb-3">
                 Quick Links
               </div>
               <div className="flex flex-col gap-2">
@@ -43,7 +42,7 @@ export default function Footer() {
                   <a
                     key={label}
                     href={href}
-                    className="text-sm text-cream/50 hover:text-cream transition-colors font-body"
+                    className="text-sm text-white hover:text-blue-500 transition-colors font-body"
                   >
                     {label}
                   </a>
@@ -51,7 +50,7 @@ export default function Footer() {
               </div>
             </div>
             <div>
-              <div className="font-mono text-[10px] text-cream/30 uppercase tracking-widest mb-3">
+              <div className="font-sans text-sm font-semibold text-white uppercase tracking-widest mb-3">
                 Get In Touch
               </div>
               <div className="flex flex-col gap-3">
@@ -59,7 +58,7 @@ export default function Footer() {
                   href={CALENDLY_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-cream/50 hover:text-accent transition-colors font-body"
+                  className="flex items-center gap-2 text-sm text-white hover:text-blue-500 transition-colors font-body"
                 >
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <rect x="3" y="4" width="18" height="18" rx="2" />
@@ -73,7 +72,7 @@ export default function Footer() {
                   href={LINKEDIN_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-cream/50 hover:text-accent transition-colors font-body"
+                  className="flex items-center gap-2 text-sm text-white   hover:text-blue-500 transition-colors font-body"
                 >
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
@@ -87,10 +86,10 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs font-mono text-cream/25">
-            © {new Date().getFullYear()} RecruitFlow. All rights reserved.
+          <p className="text-sm font-sans font-semibold text-white">
+            © {new Date().getFullYear()} H&S Solutions. All rights reserved.
           </p>
-          <p className="text-xs font-mono text-cream/20">
+          <p className="text-xs font-sans font-semibold text-white">
             Built for staffing & recruitment agencies.
           </p>
         </div>

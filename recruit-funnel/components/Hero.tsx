@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -54,7 +55,7 @@ export default function Hero() {
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-muted border border-accent/20 mb-8"
         >
           <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-          <span className="font-mono text-xs text-accent tracking-widest uppercase">
+          <span className="font-sans text-md text-black font-semibold tracking-widest uppercase">
             Workflow Automation for Staffing Agencies
           </span>
         </motion.div>
@@ -97,7 +98,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-lg sm:text-xl text-warm font-body font-normal max-w-2xl mb-10 leading-relaxed"
+            className="text-lg sm:text-xl text-black font-body font-normal max-w-2xl mb-10 leading-relaxed"
           >
             We build automation systems that handle your candidate follow-ups,
             interview scheduling, and client reporting — so your team does the
@@ -113,11 +114,11 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="flex flex-col sm:flex-row gap-4 mb-16"
           >
-            <a
+            <Link
               href={CALENDLY_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-glow group flex items-center justify-center gap-3 px-8 py-4 bg-accent text-white rounded-2xl text-base font-semibold shadow-xl shadow-accent/25 hover:bg-accent-light transition-all duration-200 hover:shadow-accent/35 hover:-translate-y-0.5"
+              className="btn-glow group flex items-center justify-center gap-3 px-8 py-4 bg-accent text-white rounded-2xl text-base font-semibold shadow-xl shadow-accent/25 hover:bg-accent-light transition-all duration-200 hover:-translate-y-0.5"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <rect x="3" y="4" width="18" height="18" rx="2" />
@@ -137,9 +138,9 @@ export default function Hero() {
               >
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
-            </a>
+            </Link>
 
-            <a
+            <Link
               href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
@@ -150,7 +151,7 @@ export default function Hero() {
                 <circle cx="4" cy="4" r="2" />
               </svg>
               Message Me on LinkedIn
-            </a>
+            </Link>
           </motion.div>
 
           {/* Trust signal */}
@@ -158,7 +159,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
-            className="text-xs font-mono text-warm uppercase tracking-widest mb-12"
+            className="text-xs font-mono text-black uppercase tracking-widest mb-12"
           >
             No commitment. No pitch deck. Just a real conversation about your ops.
           </motion.p>
