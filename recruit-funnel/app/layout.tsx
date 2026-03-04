@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${playfair.variable} ${dmSans.variable} ${dmMono.variable} font-body bg-cream text-ink antialiased`}
+        
       >
         {children}
       </body>

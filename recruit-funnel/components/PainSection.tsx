@@ -105,7 +105,7 @@ export default function PainSection() {
             <br />
             <span className="text-accent">You're losing them to your inbox.</span>
           </h2>
-          <p className="text-lg text-warm font-body leading-relaxed">
+          <p className="text-lg text-ink font-body leading-relaxed">
             Every staffing agency owner I talk to knows exactly what's broken.
             They just haven't had time to fix it — because they're too busy
             doing the thing that needs to be automated.

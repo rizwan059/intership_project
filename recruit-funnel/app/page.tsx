@@ -18,7 +18,7 @@ export default function Home() {
     <main className="grain relative overflow-x-hidden">
       <Navbar />
       <Hero />
-      <TickerBar />
+      {/* <TickerBar /> */}
       <PainSection />
       <HowItWorks />
       <WhatWeAutomate />

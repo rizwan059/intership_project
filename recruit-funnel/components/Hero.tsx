@@ -26,7 +26,7 @@ export default function Hero() {
   return (
     <section
       ref={ref}
-      className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-cream pt-16"
+      className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-white pt-16"
     >
       {/* Background orbs */}
       <div className="absolute inset-0 pointer-events-none">
@@ -41,7 +41,7 @@ export default function Hero() {
         {/* Dot grid accent */}
         <div className="absolute top-32 left-0 w-48 h-48 dot-grid opacity-20" />
         <div className="absolute bottom-20 right-0 w-64 h-64 dot-grid opacity-10" />
-      </div>
+      </div>hi
 
       <motion.div
         style={{ y, opacity }}
@@ -156,9 +156,9 @@ export default function Hero() {
 
           {/* Trust signal */}
           <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.7 }}
+            // initial={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
+            // transition={{ delay: 0.7 }}
             className="text-xs font-mono text-black uppercase tracking-widest mb-12"
           >
             No commitment. No pitch deck. Just a real conversation about your ops.
@@ -192,7 +192,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Scroll indicator */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2 }}
@@ -206,7 +206,7 @@ export default function Hero() {
         >
           <div className="w-1 h-2 bg-accent rounded-full" />
         </motion.div>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 }

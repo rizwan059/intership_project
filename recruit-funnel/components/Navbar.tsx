@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
 // ✏️ EDIT: Your Calendly link
 const CALENDLY_LINK = "https://calendly.com/YOUR_LINK_HERE";
@@ -33,16 +34,15 @@ export default function Navbar() {
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? "bg-cream/95 backdrop-blur-md border-b border-border-warm shadow-sm"
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+            ? "bg-white shadow-sm"
             : "bg-transparent"
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
+          <Link href="#" className="flex items-center gap-2 group">
+            <div className="w-8 h-8 bg-blue-400 rounded-lg flex items-center justify-center">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M2 8L8 2L14 8L8 14L2 8Z" fill="white" />
                 <circle cx="8" cy="8" r="2.5" fill="white" opacity="0.4" />
@@ -51,24 +51,24 @@ export default function Navbar() {
             <span className="font-display font-bold text-lg text-ink">
               H&S Solutions<span className="text-accent">.</span>
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             {links.map((link) => (
-              <a
+              <Link
                 key={link.label}
                 href={link.href}
-                className="text-sm font-body text-warm hover:text-ink transition-colors underline-draw"
+                className="text-sm font-body text-gray-800 hover:text-ink transition-colors underline-draw"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
           {/* Desktop CTAs */}
           <div className="hidden md:flex items-center gap-3">
-            <a
+            <Link
               href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
@@ -79,8 +79,8 @@ export default function Navbar() {
                 <circle cx="4" cy="4" r="2" />
               </svg>
               LinkedIn
-            </a>
-            <a
+            </Link>
+            <Link
               href={CALENDLY_LINK}
               target="_blank"
               rel="noopener noreferrer"
@@ -90,7 +90,7 @@ export default function Navbar() {
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -114,18 +114,18 @@ export default function Navbar() {
           >
             <nav className="flex flex-col gap-4 mb-6">
               {links.map((link) => (
-                <a
+                <Link
                   key={link.label}
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
                   className="text-base font-medium text-ink border-b border-border-warm pb-4"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </nav>
             <div className="flex flex-col gap-3">
-              <a
+              <Link
                 href={LINKEDIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -136,15 +136,15 @@ export default function Navbar() {
                   <circle cx="4" cy="4" r="2" />
                 </svg>
                 Chat on LinkedIn
-              </a>
-              <a
+              </Link>
+              <Link
                 href={CALENDLY_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-4 py-3 text-sm font-semibold bg-accent text-white rounded-xl"
               >
                 Book Free 20-Min Call
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}
