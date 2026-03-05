@@ -41,7 +41,7 @@ export default function Hero() {
         {/* Dot grid accent */}
         <div className="absolute top-32 left-0 w-48 h-48 dot-grid opacity-20" />
         <div className="absolute bottom-20 right-0 w-64 h-64 dot-grid opacity-10" />
-      </div>hi
+      </div>
 
       <motion.div
         style={{ y, opacity }}
@@ -49,13 +49,13 @@ export default function Hero() {
       >
         {/* Badge */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-muted border border-accent/20 mb-8"
+          // initial={{ opacity: 0, y: 20 }}
+          // animate={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 0.5, delay: 0.1 }}
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-300 border border-blue-500/20 mb-8"
         >
-          <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-          <span className="font-sans text-md text-black font-semibold tracking-widest uppercase">
+          <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
+          <span className="font-sans text-sm text-ink font-semibold tracking-widest uppercase">
             Workflow Automation for Staffing Agencies
           </span>
         </motion.div>
@@ -63,9 +63,9 @@ export default function Hero() {
         {/* Headline */}
         <div className="max-w-5xl">
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            // initial={{ opacity: 0, y: 30 }}
+            // animate={{ opacity: 1, y: 0 }}
+            // transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black text-ink leading-[1.0] tracking-tight mb-6"
           >
             Your Recruiters Are
@@ -73,9 +73,9 @@ export default function Hero() {
             <span className="relative">
               <span className="text-accent">Losing Candidates</span>
               <motion.svg
-                initial={{ pathLength: 0 }}
-                animate={{ pathLength: 1 }}
-                transition={{ duration: 1, delay: 1, ease: "easeOut" }}
+                // initial={{ pathLength: 0 }}
+                // animate={{ pathLength: 1 }}
+                // transition={{ duration: 1, delay: 1, ease: "easeOut" }}
                 className="absolute -bottom-2 left-0 w-full"
                 viewBox="0 0 400 12"
                 fill="none"
@@ -95,9 +95,9 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            // initial={{ opacity: 0, y: 20 }}
+            // animate={{ opacity: 1, y: 0 }}
+            // transition={{ duration: 0.6, delay: 0.4 }}
             className="text-lg sm:text-xl text-black font-body font-normal max-w-2xl mb-10 leading-relaxed"
           >
             We build automation systems that handle your candidate follow-ups,
@@ -109,16 +109,16 @@ export default function Hero() {
 
           {/* CTAs */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
+            // initial={{ opacity: 0, y: 20 }}
+            // animate={{ opacity: 1, y: 0 }}
+            // transition={{ duration: 0.6, delay: 0.5 }}
             className="flex flex-col sm:flex-row gap-4 mb-16"
           >
             <Link
               href={CALENDLY_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-glow group flex items-center justify-center gap-3 px-8 py-4 bg-accent text-white rounded-2xl text-base font-semibold shadow-xl shadow-accent/25 hover:bg-accent-light transition-all duration-200 hover:-translate-y-0.5"
+              className="btn-glow group flex items-center justify-center gap-3 px-8 py-4 bg-blue-300 text-ink rounded-2xl text-base font-semibold shadow-xl shadow-accent/25 hover:bg-blue-300  transition-all duration-200 hover:-translate-y-0.5"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <rect x="3" y="4" width="18" height="18" rx="2" />
@@ -159,7 +159,7 @@ export default function Hero() {
             // initial={{ opacity: 0 }}
             // animate={{ opacity: 1 }}
             // transition={{ delay: 0.7 }}
-            className="text-xs font-mono text-black uppercase tracking-widest mb-12"
+            className="text-xs font-sans font-semibold text-ink uppercase tracking-widest mb-12"
           >
             No commitment. No pitch deck. Just a real conversation about your ops.
           </motion.p>
@@ -167,9 +167,9 @@ export default function Hero() {
 
         {/* Stats row */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.6 }}
+          // initial={{ opacity: 0, y: 30 }}
+          // animate={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 0.7, delay: 0.6 }}
           className="grid grid-cols-2 lg:grid-cols-4 gap-4"
         >
           {stats.map((stat, i) => (
@@ -178,12 +178,12 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 + i * 0.1 }}
-              className="bg-white/70 backdrop-blur-sm border border-border-warm rounded-2xl px-5 py-4 card-lift"
+              className="bg-blue-50 backdrop-blur-sm border border-border-warm rounded-2xl px-5 py-4 card-lift"
             >
-              <div className="font-display text-3xl font-black text-accent mb-1">
+              <div className="font-display text-3xl font-black text-ink mb-1">
                 {stat.value}
               </div>
-              <div className="text-xs font-body text-warm leading-snug">
+              <div className="text-xs font-body text-ink leading-snug">
                 {stat.label}
               </div>
             </motion.div>

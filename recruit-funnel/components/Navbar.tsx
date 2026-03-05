@@ -34,10 +34,11 @@ export default function Navbar() {
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-            ? "bg-white shadow-sm"
-            : "bg-transparent"
-          }`}
+        // className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        //   ? "bg-white shadow-sm"
+        //   : "bg-transparent"
+        //   }`
+        // }
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
           {/* Logo */}
@@ -69,7 +70,7 @@ export default function Navbar() {
           {/* Desktop CTAs */}
           <div className="hidden md:flex items-center gap-3">
             <Link
-              href={LINKEDIN_URL}
+              href={"https://www.linkedin.com/company/h-s-solutions-biz/"}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-ink border border-border-warm rounded-full hover:bg-ink hover:text-cream transition-all duration-200"
@@ -126,7 +127,7 @@ export default function Navbar() {
             </nav>
             <div className="flex flex-col gap-3">
               <Link
-                href={LINKEDIN_URL}
+                href={"https://www.linkedin.com/company/h-s-solutions-biz/"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-4 py-3 text-sm font-medium text-ink border border-border-warm rounded-xl"

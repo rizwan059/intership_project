@@ -11,8 +11,11 @@ const pains = [
       "Your recruiters manually send 80–150 follow-up emails every single day. Candidates ghost — not because they weren't interested, but because your team was too busy to follow up in time.",
     stat: "48hrs",
     statLabel: "before a candidate loses interest",
-    color: "border-l-accent",
-    bgHover: "hover:bg-accent-muted",
+    color: "border-ink",
+    // color: "border-blue-500",
+
+    // bgHover: "hover:bg-accent-muted",
+    bgHover: "hover:bg-emerald-light",
   },
   {
     icon: "📋",
@@ -21,7 +24,8 @@ const pains = [
       "Data lives in your ATS, your spreadsheet, your email, and your calendar. Every update means logging into all four and manually syncing. This isn't a tech problem — it's a time problem.",
     stat: "15%",
     statLabel: "productivity lost to poor data quality",
-    color: "border-l-emerald",
+    // color: "border-l-emerald",
+    color: "border-ink",
     bgHover: "hover:bg-emerald-light",
   },
   {
@@ -31,8 +35,11 @@ const pains = [
       "Booking one interview takes 5–8 back-and-forth emails. Multiply that by 20 candidates per week. That's hours of your week gone — and a candidate experience that feels outdated.",
     stat: "23 days",
     statLabel: "average interview cycle without automation",
-    color: "border-l-accent",
-    bgHover: "hover:bg-accent-muted",
+    // color: "border-l-accent",
+    color: "border-ink",
+    bgHover: "hover:bg-emerald-light",
+
+    // bgHover: "hover:bg-accent-muted",
   },
   {
     icon: "📊",
@@ -41,8 +48,10 @@ const pains = [
       "Every Friday, someone on your team spends 2+ hours pulling numbers from 3 tools, formatting in Google Sheets, and emailing a PDF. No real-time data. No insights. Just copy-paste.",
     stat: "80%",
     statLabel: "of recruiter time spent on non-revenue admin",
-    color: "border-l-emerald",
+    // color: "border-l-emerald",
+    color: "border-ink",
     bgHover: "hover:bg-emerald-light",
+    // bgHover: "hover:bg-emerald-light",
   },
   {
     icon: "🚪",
@@ -51,8 +60,10 @@ const pains = [
       "Every new client gets a different experience — some get detailed onboarding, some get a forward of an old email chain. No consistency. No automation. Every placement re-invented from scratch.",
     stat: "82%",
     statLabel: "retention increase with proper onboarding",
-    color: "border-l-accent",
-    bgHover: "hover:bg-accent-muted",
+    // color: "border-l-accent",
+    color: "border-ink",
+    bgHover: "hover:bg-emerald-light",
+    // bgHover: "hover:bg-accent-muted",
   },
   {
     icon: "🔀",
@@ -61,8 +72,11 @@ const pains = [
       "Bullhorn, Gmail, Calendly, Google Sheets, Slack — none of them communicate with each other. Your recruiters manually bridge the gap every day. That's the most expensive software you own.",
     stat: "#1",
     statLabel: "source of errors in recruitment ops",
-    color: "border-l-emerald",
+    // color: "border-l-emerald",
+    color: "border-ink",
+    // bgHover: "hover:bg-emerald-light",
     bgHover: "hover:bg-emerald-light",
+    // transition: "hover:translate-y-2 cursor-pointer",
   },
 ];
 
@@ -93,8 +107,8 @@ export default function PainSection() {
           transition={{ duration: 0.6 }}
           className="max-w-3xl mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-ink rounded-full mb-6">
-            <span className="font-mono text-xs text-cream/60 tracking-widest uppercase">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-300 rounded-full mb-6">
+            <span className="font-sans text-sm font-semibold text-ink tracking-widest uppercase">
               The Real Problem
             </span>
           </div>
@@ -103,7 +117,7 @@ export default function PainSection() {
             <br />
             candidates to better agencies.
             <br />
-            <span className="text-accent">You're losing them to your inbox.</span>
+            <span className="text-blue-300">You're losing them to your inbox.</span>
           </h2>
           <p className="text-lg text-ink font-body leading-relaxed">
             Every staffing agency owner I talk to knows exactly what's broken.
@@ -127,17 +141,17 @@ export default function PainSection() {
               className={`group relative bg-white border border-border-warm border-l-4 ${pain.color} rounded-2xl p-6 card-lift cursor-default transition-colors duration-200 ${pain.bgHover}`}
             >
               <div className="text-3xl mb-4">{pain.icon}</div>
-              <h3 className="font-display text-xl font-bold text-ink mb-3 leading-tight">
+              <h3 className="font-display text-xl font-bold text-blue-400 mb-3 leading-tight">
                 {pain.title}
               </h3>
-              <p className="text-sm text-warm font-body leading-relaxed mb-5">
+              <p className="text-sm text-ink font-body leading-relaxed mb-5">
                 {pain.description}
               </p>
               <div className="pt-4 border-t border-border-warm">
-                <span className="font-display text-2xl font-black text-accent">
+                <span className="font-display text-2xl font-black text-blue-400">
                   {pain.stat}
                 </span>
-                <span className="text-xs text-warm font-mono block mt-1">
+                <span className="text-md text-ink font-sans block mt-1">
                   {pain.statLabel}
                 </span>
               </div>
@@ -151,23 +165,23 @@ export default function PainSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-16 p-8 bg-ink rounded-3xl"
+          className="mt-16 p-8 bg-blue-50 rounded-3xl"
         >
           <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
             <div className="flex-1">
-              <p className="font-display text-2xl sm:text-3xl font-bold text-cream leading-tight">
+              <p className="font-display text-2xl sm:text-3xl font-bold text-ink leading-tight">
                 "I've been meaning to fix this for 6 months."
               </p>
-              <p className="text-warm mt-3 font-body text-sm leading-relaxed">
+              <p className="text-ink mt-3 font-body text-sm leading-relaxed">
                 That's what every agency owner tells me. The gap between knowing your ops are broken and actually fixing them is where placements — and revenue — slip away. I close that gap.
               </p>
             </div>
-            <div className="flex-shrink-0 w-1 h-16 bg-accent/30 hidden md:block" />
+            <div className="flex-shrink-0 w-1 h-16 bg-ink hidden md:block" />
             <div className="flex-shrink-0">
-              <div className="font-mono text-xs text-warm uppercase tracking-widest mb-1">
+              <div className="font-mono text-xs text-ink uppercase tracking-widest mb-1">
                 Average time to first result
               </div>
-              <div className="font-display text-5xl font-black text-accent">
+              <div className="font-display text-5xl font-black text-ink">
                 14 days
               </div>
             </div>

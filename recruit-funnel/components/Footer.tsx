@@ -69,7 +69,7 @@ export default function Footer() {
                   Book a Free Call
                 </a>
                 <a
-                  href={LINKEDIN_URL}
+                  href={"https://www.linkedin.com/company/h-s-solutions-biz/"}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-white   hover:text-blue-500 transition-colors font-body"

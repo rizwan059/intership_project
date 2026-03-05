@@ -76,17 +76,17 @@ export default function HowItWorks() {
           transition={{ duration: 0.6 }}
           className="max-w-2xl mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-accent-muted rounded-full mb-6">
-            <span className="font-mono text-xs text-accent tracking-widest uppercase">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-300 rounded-full mb-6">
+            <span className="font-sans text-sm font-semibold text-ink tracking-widest uppercase">
               How It Works
             </span>
           </div>
           <h2 className="font-display text-4xl sm:text-5xl font-black text-ink leading-tight mb-4">
             From broken workflow
             <br />
-            to <span className="text-accent">running on autopilot.</span>
+            to <span className="text-blue-300">running on autopilot.</span>
           </h2>
-          <p className="text-warm font-body text-lg leading-relaxed">
+          <p className="text-ink font-body text-lg leading-relaxed">
             A simple, clear process. No jargon. No endless discovery. 
             Just a fast path from your biggest ops pain to it being solved.
           </p>
@@ -112,19 +112,19 @@ export default function HowItWorks() {
                 </div>
 
                 {/* Step num */}
-                <div className="font-mono text-xs text-accent tracking-widest mb-2">
+                <div className="font-sans font-semibold text-xs text-ink tracking-widest mb-2">
                   STEP {step.num}
                 </div>
 
                 <h3 className="font-display text-xl font-bold text-ink mb-3 leading-tight">
                   {step.title}
                 </h3>
-                <p className="text-sm text-warm font-body leading-relaxed mb-4 flex-1">
+                <p className="text-sm text-ink font-body leading-relaxed mb-4 flex-1">
                   {step.description}
                 </p>
-                <div className="flex items-start gap-2 p-3 bg-cream rounded-xl border border-border-warm">
-                  <span className="text-accent mt-0.5 text-xs">→</span>
-                  <span className="text-xs font-mono text-warm leading-snug">
+                <div className="flex items-start gap-2 p-3 bg-blue-50 rounded-xl border border-border-warm">
+                  <span className="text-blue-500 mt-0.5 text-xs">→</span>
+                  <span className="text-xs font-mono text-ink leading-snug">
                     {step.detail}
                   </span>
                 </div>
